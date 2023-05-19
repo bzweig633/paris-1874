@@ -78,9 +78,10 @@
       tap: false
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
   
-  L.MarkerCluster({
+  L.markerClusterGroup({
   polygonOptions: {
-    color: "red"
+    color: "red",
+    fillColor: "yellow"
     }
   }); //change style of polygon coverage
   
