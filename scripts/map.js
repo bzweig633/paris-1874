@@ -144,6 +144,9 @@ $(window).on('load', function() {
     });
     
     var group = L.featureGroup(markerArray);
+    var group = L.markerClusterGroup({
+        showCoverageOnHover: false
+    });
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
 
     // if layers.length === 0, add points to map instead of layer
