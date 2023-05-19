@@ -77,6 +77,13 @@
       scrollWheelZoom: false,
       tap: false
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+  
+  L.markerClusterGroup({
+  polygonOptions: {
+    color: "red"
+    }
+  }); //change style of polygon coverage
+  
   </script>
 
   <script type="text/javascript" src="./google-doc-url.js"></script>
