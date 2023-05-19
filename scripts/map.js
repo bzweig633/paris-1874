@@ -139,11 +139,12 @@ $(window).on('load', function() {
       }
     }
 
+    var marker = L.markerClusterGroup({
+      showCoverageOnHover: false
+    });
+    
     var group = L.featureGroup(markerArray);
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
-    clusters  = L.markerClusterGroup({
-                showCoverageOnHover: false
-    });
 
     // if layers.length === 0, add points to map instead of layer
     if (layers === undefined || layers.length === 0) {
