@@ -150,7 +150,7 @@ $(window).on('load', function() {
         ? L.markerClusterGroup({
           polygonOptions: {
             color: "yellow",
-            fill: "yellow,
+            fill: "yellow",
             weight: 1
           }
         }).addLayer(group).addTo(map)
