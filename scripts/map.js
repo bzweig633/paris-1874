@@ -147,13 +147,7 @@ $(window).on('load', function() {
     if (layers === undefined || layers.length === 0) {
       map.addLayer(
         clusters
-        ? L.markerClusterGroup({
-          polygonOptions: {
-            color: "yellow",
-            fill: "yellow",
-            weight: 1
-          }
-        }).addLayer(group).addTo(map)
+        ? L.markerClusterGroup().addLayer(group).addTo(map)
         : group
       );
     } else {
