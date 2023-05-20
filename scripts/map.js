@@ -139,9 +139,6 @@ $(window).on('load', function() {
       }
     }
 
-    var marker = L.markerClusterGroup({
-      showCoverageOnHover: false
-    });
     
     var group = L.featureGroup(markerArray);
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
@@ -150,7 +147,7 @@ $(window).on('load', function() {
     if (layers === undefined || layers.length === 0) {
       map.addLayer(
         clusters
-        ? L.markerClusterGroup().addLayer(group).addTo(map)
+        ? L.markerClusterGroup({polygonOptions: {color: "red"}}).addLayer(group).addTo(map)
         : group
       );
     } else {
