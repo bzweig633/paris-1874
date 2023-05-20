@@ -153,6 +153,7 @@ $(window).on('load', function() {
     } else {
       if (clusters) {
         // Add multilayer cluster support
+        clusters = L.markerClusterGroup({polygonOptions: {fill: "red"}});
         multilayerClusterSupport = L.markerClusterGroup.layerSupport();
         multilayerClusterSupport.addTo(map);
 
