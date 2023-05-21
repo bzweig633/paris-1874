@@ -142,9 +142,6 @@ $(window).on('load', function() {
 
     
     var group = L.featureGroup(markerArray);
-    var clusters = L.markerClusterGroup({
-      polygonOptions: {color: "red"}
-    }); 
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
 
     // if layers.length === 0, add points to map instead of layer
