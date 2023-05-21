@@ -79,9 +79,13 @@ form {
   radius: 3;
 }
 
-.marker-cluster-medium, .marker-cluster-medium div {
+.marker-cluster-medium {
   color: white;
-  background-color: fade(#1520A6, 50%);
+  background-color: rgba(300, 200, 100, 0.5);
+} 
+
+.marker-cluster-medium div {
+  background-color: rgba(300, 200, 100, 1);
 }
 
 .loader,
