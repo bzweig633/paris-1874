@@ -79,6 +79,15 @@ form {
   radius: 3;
 }
 
+.marker-cluster-medium {
+  color: red;
+  opacity: 0.5;
+}
+
+.marker-cluster-medium.div {
+  color: red;
+}
+
 .loader,
 .loader:before,
 .loader:after {
