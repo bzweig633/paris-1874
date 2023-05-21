@@ -100,7 +100,6 @@ $(window).on('load', function() {
    */
   function mapPoints(points, layers) {
     var markerArray = [];
-    var markerArray = L.markerClusterGroup({polygonOptions: {color: "red"}});
     // check that map has loaded before adding points to it?
     for (var i in points) {
       var point = points[i];
