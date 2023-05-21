@@ -85,9 +85,9 @@ form {
   opacity: 0.5;
 }
 
-.marker-cluster-medium.div {
+.marker-cluster-medium div {
   color: white;
-  background: blue; 
+  background-color: blue; 
 }
 
 .loader,
