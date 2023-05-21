@@ -80,12 +80,14 @@ form {
 }
 
 .marker-cluster-medium {
-  color: red;
+  color: white;
+  background: blue;
   opacity: 0.5;
 }
 
 .marker-cluster-medium.div {
-  color: red;
+  color: white;
+  background: blue; 
 }
 
 .loader,
