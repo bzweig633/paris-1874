@@ -81,13 +81,14 @@ form {
 
 .marker-cluster-medium {
   color: white;
-  background: blue;
+  background-color: blue;
   opacity: 0.5;
 }
 
 .marker-cluster-medium div {
   color: white;
-  background-color: blue; 
+  background-color: blue;
+  opacity: 0.5;
 }
 
 .loader,
