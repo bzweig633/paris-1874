@@ -81,12 +81,12 @@ form {
 
 .marker-cluster-small {
   color: white;
-  background-color: rgba(60, 123, 131, 0.5);
+  background-color: rgba(113, 159, 165, 0.5);
 }
 
 .marker-cluster-small div {
   color: white;
-  background-color: rgba(60, 123, 131, 1);
+  background-color: rgba(113, 159, 165, 1);
 }
 
 .marker-cluster-medium {
