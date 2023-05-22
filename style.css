@@ -79,12 +79,32 @@ form {
   radius: 3;
 }
 
+.marker-cluster-small {
+  color: white;
+  background-color: rgba(60, 123, 131, 0.5);
+}
+
+.marker-cluster-medium {
+  color: white;
+  background-color: rgba(60, 123, 131, 1);
+}
+
 .marker-cluster-medium {
   color: white;
   background-color: rgba(60, 123, 131, 0.5);
 } 
 
 .marker-cluster-medium div {
+  background-color: rgba(60, 123, 131, 1);
+}
+
+.marker-cluster-large {
+  color: white;
+  background-color: rgba(60, 123, 131, 0.5);
+}
+
+.marker-cluster-large div {
+  color: white;
   background-color: rgba(60, 123, 131, 1);
 }
 
