@@ -100,12 +100,12 @@ form {
 
 .marker-cluster-large {
   color: white;
-  background-color: rgba(60, 123, 131, 0.5);
+  background-color: rgba(4, 70, 78, 0.5);
 }
 
 .marker-cluster-large div {
   color: white;
-  background-color: rgba(60, 123, 131, 1);
+  background-color: rgba(4, 70, 78, 1);
 }
 
 .loader,
