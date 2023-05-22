@@ -84,7 +84,7 @@ form {
   background-color: rgba(60, 123, 131, 0.5);
 }
 
-.marker-cluster-medium {
+.marker-cluster-small div {
   color: white;
   background-color: rgba(60, 123, 131, 1);
 }
