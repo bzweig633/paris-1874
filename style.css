@@ -81,11 +81,11 @@ form {
 
 .marker-cluster-medium {
   color: white;
-  background-color: rgba(300, 200, 100, 0.5);
+  background-color: rgba(60, 123, 131, 0.5);
 } 
 
 .marker-cluster-medium div {
-  background-color: rgba(300, 200, 100, 1);
+  background-color: rgba(60, 123, 131, 1);
 }
 
 .loader,
