@@ -142,7 +142,7 @@ $(window).on('load', function() {
     var group = L.featureGroup(markerArray);
     var clusterGroup = L.markerClusterGroup({
       polygonOptions: {
-        color: red
+        color: 'red'
       }
     });
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
