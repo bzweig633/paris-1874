@@ -82,19 +82,21 @@ form {
 .marker-cluster-small {
   color: white;
   background-color: rgba(113, 159, 165, 0.5);
+  transition: transform .2s;
 }
 
 .marker-cluster-small div {
   color: white;
   background-color: rgba(113, 159, 165, 1);
+  transition: transform .2s;
 }
 
 .marker-cluster-small:hover {
-  transform: scale(0.5);
+  transform: scale(1.25);
 }
 
 .marker-cluster-small div:hover {
-  transform: scale(0.5);
+  transform: scale(1.25);
 }
 
 .marker-cluster-medium {
