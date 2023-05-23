@@ -148,7 +148,7 @@ $(window).on('load', function() {
       map.addLayer(
         clusters
         ? L.markerClusterGroup({
-          polygonOptions = {
+          polygonOptions: {
           color: 'red',
           fillColor: 'red',
           weight: 1
