@@ -148,7 +148,7 @@ $(window).on('load', function() {
    // Define the polygon options
     var polygonOptions = {
      color: 'red',
-     fill: 'blue',
+     fillColor: 'blue',
      weight: 1
 };
     
@@ -158,13 +158,25 @@ $(window).on('load', function() {
     if (layers === undefined || layers.length === 0) {
       map.addLayer(
         clusters
-        ? L.markerClusterGroup(polygonOptions).addLayer(group).addTo(map)
+        ? L.markerClusterGroup({
+          polygonOptions: {
+          color: 'red',
+          fillColor: 'red',
+          weight: 1
+          }
+        }).addLayer(group).addTo(map)
         : group
       );
     } else {
       if (clusters) {
         // Add multilayer cluster support
-        multilayerClusterSupport = L.markerClusterGroup.layerSupport();
+        multilayerClusterSupport = L.markerClusterGroup({
+          polygonOptions: {
+          color: 'red',
+          fillColor: 'red',
+          weight: 1
+          }
+         }).layerSupport();
         multilayerClusterSupport.addTo(map);
 
         for (i in layers) {
