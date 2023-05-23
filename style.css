@@ -89,6 +89,14 @@ form {
   background-color: rgba(113, 159, 165, 1);
 }
 
+.marker-cluster-small:hover {
+  transform: scale(0.5);
+}
+
+.marker-cluster-small div:hover {
+  transform: scale(0.5);
+}
+
 .marker-cluster-medium {
   color: white;
   background-color: rgba(60, 123, 131, 0.5);
