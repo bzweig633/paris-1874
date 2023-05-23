@@ -143,7 +143,7 @@ $(window).on('load', function() {
     var group = L.featureGroup(markerArray);
     
     // Create a feature group for polygons
-    var polygonGroup = L.featureGroup(polygonArray);
+    // var polygonGroup = L.featureGroup(polygonArray);
 
    // Define the polygon options
     var polygonOptions = {
@@ -158,7 +158,7 @@ $(window).on('load', function() {
     if (layers === undefined || layers.length === 0) {
       map.addLayer(
         clusters
-        ? L.markerClusterGroup().addLayer(group).addLayer(polygonGroup, polygonOptions).addTo(map)
+        ? L.markerClusterGroup(polygonOptions).addLayer(group).addTo(map)
         : group
       );
     } else {
