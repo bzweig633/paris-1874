@@ -140,18 +140,7 @@ $(window).on('load', function() {
     }
 
     
-    var group = L.featureGroup(markerArray);
-    
-    // Create a feature group for polygons
-    // var polygonGroup = L.featureGroup(polygonArray);
-
-   // Define the polygon options
-    var polygonOptions = {
-     color: 'red',
-     fillColor: 'blue',
-     weight: 1
-};
-    
+    var group = L.featureGroup(markerArray); 
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
 
     // if layers.length === 0, add points to map instead of layer
@@ -159,7 +148,7 @@ $(window).on('load', function() {
       map.addLayer(
         clusters
         ? L.markerClusterGroup({
-          polygonOptions: {
+          polygonOptions = {
           color: 'red',
           fillColor: 'red',
           weight: 1
@@ -170,13 +159,7 @@ $(window).on('load', function() {
     } else {
       if (clusters) {
         // Add multilayer cluster support
-        multilayerClusterSupport = L.markerClusterGroup({
-          polygonOptions: {
-          color: 'red',
-          fillColor: 'red',
-          weight: 1
-          }
-         }).layerSupport();
+        multilayerClusterSupport = L.markerClusterGroup.layerSupport();
         multilayerClusterSupport.addTo(map);
 
         for (i in layers) {
