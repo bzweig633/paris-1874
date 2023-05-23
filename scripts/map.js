@@ -148,7 +148,7 @@ $(window).on('load', function() {
    // Define the polygon options
     var polygonOptions = {
      color: 'red',
-     fillColor: 'blue',
+     fill: 'blue',
      weight: 1
 };
     
