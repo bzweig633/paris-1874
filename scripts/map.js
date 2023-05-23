@@ -141,13 +141,24 @@ $(window).on('load', function() {
 
     
     var group = L.featureGroup(markerArray);
+    
+    // Create a feature group for polygons
+    var polygonGroup = L.featureGroup(polygonArray);
+
+   // Define the polygon options
+    var polygonOptions = {
+     color: 'red',
+     fillColor: 'blue',
+     weight: 1
+};
+    
     var clusters = (getSetting('_markercluster') === 'on') ? true : false;
 
     // if layers.length === 0, add points to map instead of layer
     if (layers === undefined || layers.length === 0) {
       map.addLayer(
         clusters
-        ? L.markerClusterGroup().addLayer(group).addTo(map)
+        ? L.markerClusterGroup().addLayer(group).addLayer(polygonGroup, polygonOptions).addTo(map)
         : group
       );
     } else {
