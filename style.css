@@ -102,20 +102,40 @@ form {
 .marker-cluster-medium {
   color: white;
   background-color: rgba(60, 123, 131, 0.5);
+  transition: transform .2s;
 } 
 
 .marker-cluster-medium div {
   background-color: rgba(60, 123, 131, 1);
+  transition: transform .2s;
+}
+
+.marker-cluster-medium div:hover {
+  transform: scale(1.25);
+}
+
+.marker-cluster-medium:hover {
+  transition: transform .2s;
 }
 
 .marker-cluster-large {
   color: white;
   background-color: rgba(4, 70, 78, 0.5);
+  transition: transform .2s;
 }
 
 .marker-cluster-large div {
   color: white;
   background-color: rgba(4, 70, 78, 1);
+  transition: transform .2s;
+}
+
+.marker-cluster-large:hover {
+  transition: transform .2s;
+}
+
+.marker-cluster-large div:hover {
+  transition: transform .2s;
 }
 
 .loader,
