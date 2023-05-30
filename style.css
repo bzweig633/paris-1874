@@ -115,7 +115,7 @@ form {
 }
 
 .marker-cluster-medium:hover {
-  transition: transform .2s;
+  transform: scale(1.25);
 }
 
 .marker-cluster-large {
@@ -131,11 +131,11 @@ form {
 }
 
 .marker-cluster-large:hover {
-  transition: transform .2s;
+  transform: scale(1.25);
 }
 
 .marker-cluster-large div:hover {
-  transition: transform .2s;
+  transform: scale(1.25);
 }
 
 .loader,
