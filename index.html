@@ -64,7 +64,7 @@
 
 </head>
 
-<body onload="typeWriter()">
+<body>
 
   <div class="loader">Loading...</div>
   <div id="header"></div>
@@ -84,6 +84,12 @@
       setTimeout(typeWriter, speed);
     }
   };
+
+window.onload = function() {
+if(document.readyState == 'complete') {
+typeWriter();
+  }
+};
     
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
