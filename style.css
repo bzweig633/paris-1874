@@ -16,8 +16,16 @@ body {
   font-size: 10em;
 }
 
-.fade-in {
-  animation: fadeIn 4s;
+.fade-in-fast {
+  animation: fadeIn 1.5s;
+}
+
+.fade-in-med {
+  animation: fadeIn: 3s;
+}
+
+.fade-in-slow {
+  animation: fadeIn 6s;
 }
 
 @keyframes fadeIn {
