@@ -21,7 +21,7 @@ body {
 }
 
 .fade-in-med {
-  animation: fadeIn: 3s;
+  animation: fadeIn 3s;
 }
 
 .fade-in-slow {
