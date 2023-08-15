@@ -67,13 +67,14 @@
 <body>
 
   <div class="loader">Loading...</div>
+  <div id="container"></div>
   <div id="header"></div>
   <div id="map"></div>
   <table id="maptable" class="display"></table>
 
   <script type="text/javascript">
 
-  document.getElementById("map").addEventListener("load", typeWriter);
+  document.getElementById("container").addEventListener("load", typeWriter);
     
   let txt = "Paris, 1874";
   let i = 0;
