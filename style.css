@@ -8,16 +8,20 @@ body {
   width: 100%;
 }
 
-#header {
+#header-container {
   width: 100vw;
   height: 15vh;
   background-color: black;
+  margin: 0;
+}
+
+#header {
+  width: 95vw;
+  height: 15vh;
   color: #e3e3de;
   font-family: 'Abril Fatface', 'Bentham', serif;
-  margin: 0;
   font-size: 8.7em;
   text-align: right;
-  padding-right: 5px;
 }
 
 .fade-in-fast {
