@@ -8,8 +8,8 @@ body {
 
 #header {
   width: 100vw;
-  height: 15vw;
-  background-color: black;
+  height: 15vh;
+  background-color: #000;
   color: #FFF;
   font-family: Sans-Serif;
 }
