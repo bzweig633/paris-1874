@@ -73,6 +73,12 @@
 
   <script type="text/javascript">
 
+ window.onload = function() {
+    if(document.readyState == 'complete') {
+    typeWriter();
+    }
+  };
+    
   let txt = "Paris, 1874";
   let i = 0;
   let speed = 150;
@@ -85,12 +91,7 @@
     }
   };
 
-  window.onload = function() {
-    if(document.readyState == 'complete') {
-    typeWriter();
-    }
-  };
-    
+   
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
       attributionControl: false,
