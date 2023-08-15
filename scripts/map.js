@@ -644,6 +644,7 @@ $(window).on('load', function() {
     if (getSetting('_mapSearch') !== 'off') {
       var geocoder = L.Control.geocoder({
         expand: 'click',
+        defaultMarkGeocode: False,
         position: getSetting('_mapSearch'),
         
         geocoder: L.Control.Geocoder.nominatim({
