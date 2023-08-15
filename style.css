@@ -12,6 +12,7 @@ body {
   width: 100vw;
   height: 15vh;
   margin: 0;
+  background-color: black;
 }
 
 #header {
@@ -21,7 +22,6 @@ body {
   font-family: 'Abril Fatface', 'Bentham', serif;
   font-size: 8.7em;
   text-align: right;
-  background-color: black;
 }
 
 .fade-in-fast {
