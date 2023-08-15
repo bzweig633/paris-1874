@@ -75,7 +75,7 @@
 
   let txt = "Paris, 1874";
   let i = 0;
-  let speed = 120;
+  let speed = 150;
 
   function typeWriter() {
     if (i < txt.length) {
@@ -85,11 +85,11 @@
     }
   };
 
-window.onload = function() {
-if(document.readyState == 'complete') {
-typeWriter();
-  }
-};
+  window.onload = function() {
+    if(document.readyState == 'complete') {
+    typeWriter();
+    }
+  };
     
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
