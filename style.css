@@ -6,6 +6,14 @@ body {
   width: 100%;
 }
 
+#header {
+  width: 100vw;
+  height: 15vw;
+  background-color: #OOO;
+  color: #FFF;
+  font-family: Lato, sans-serif;
+}
+
 #map {
   width: 100vw;
   height: 100vh;
