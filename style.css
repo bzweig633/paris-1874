@@ -9,9 +9,9 @@ body {
 #header {
   width: 100vw;
   height: 15vw;
-  background-color: #OOO;
+  background-color: black;
   color: #FFF;
-  font-family: Lato, sans-serif;
+  font-family: Sans-Serif;
 }
 
 #map {
