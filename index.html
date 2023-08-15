@@ -64,7 +64,7 @@
 
 </head>
 
-<body onload="typeWriter()">
+<body>
 
   <div class="loader">Loading...</div>
   <div id="header"></div>
@@ -72,6 +72,8 @@
   <table id="maptable" class="display"></table>
 
   <script type="text/javascript">
+
+  document.getElementById("map").addEventListener("load", typeWriter);
     
   let txt = "Paris, 1874";
   let i = 0;
