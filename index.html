@@ -73,11 +73,7 @@
 
   <script type="text/javascript">
 
- window.onload = function() {
-    if(document.readyState == 'complete') {
-    typeWriter();
-    }
-  };
+  document.getElementById("header").onload = function() {typeWriter()};
     
   let txt = "Paris, 1874";
   let i = 0;
@@ -90,7 +86,6 @@
       setTimeout(typeWriter, speed);
     }
   };
-
    
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
