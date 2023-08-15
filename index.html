@@ -67,11 +67,24 @@
 <body>
 
   <div class="loader">Loading...</div>
-  <div id="header">Paris, 1874</div>
+  <div id="header"></div>
   <div id="map"></div>
   <table id="maptable" class="display"></table>
 
   <script type="text/javascript">
+
+  let txt = "Paris, 1874";
+  let i = 0;
+  let speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("header").innerHTML =+ txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  } 
+    
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
       attributionControl: false,
