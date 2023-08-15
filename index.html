@@ -73,7 +73,7 @@
 
   <script type="text/javascript">
 
-  let txt = "Paris, 1874";
+  let txt = "";
   let pad = document.getElementById("header");  
   let i = 0;
   let speed = 150;
@@ -84,8 +84,17 @@
       i++;
       setTimeout(typeWriter, speed);
     }
-  };
-   
+  }
+
+function write(whatToWrite, howFast) {
+  txt += whatToWrite;
+  speed = howFast;
+  typeWriter();
+}
+
+write('Paris,', 100);
+write('  1874', 100);
+    
     var map = L.map('map', {
       center: [48.8888611, 2.319647181],
       attributionControl: false,
