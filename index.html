@@ -67,13 +67,13 @@
 <body>
 
   <div class="loader">Loading...</div>
-  <div id="header"></div>
+  <div id="header_container" onload="typeWriter()">
+    <div id="header"></div>
+  </div>
   <div id="map"></div>
   <table id="maptable" class="display"></table>
 
   <script type="text/javascript">
-
-  document.getElementById("body").onload = function() {typeWriter()};
     
   let txt = "Paris, 1874";
   let i = 0;
