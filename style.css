@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
 html,
 body {
   padding: 0;
@@ -11,7 +13,7 @@ body {
   height: 15vh;
   background-color: black;
   color: #e3e3de;
-  font-family: Arial;
+  font-family: 'Bentham', serif;
   margin: 0;
   font-size: 10em;
 }
